@@ -1,44 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Product Table & Registration</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 30px;
-        }
-        th, td {
-            border: 1px solid #ccc;
-            text-align: center;
-            padding: 10px;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-        img {
-            width: 100px;
-            height: 100px;
-        }
-        form {
-            width: 50%;
-            margin-top: 20px;
-        }
-        form div {
-            margin-bottom: 10px;
-        }
-        label {
-            display: block;
-            font-weight: bold;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Product Page with Registration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    td {
+      text-align: center;
+      padding: 10px;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+    }
+
+    input[type="text"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="password"],
+    select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-inline {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+    }
+  </style>
 </head>
 <body>
+
+  <h1>Product Catalog</h1>
+
+  <table>
+    <tbody>
+      <!-- 8 rows, 4 columns = 32 products -->
+      <!-- We loop manually with increasing ID and sample prices -->
+      <!-- Placeholder image used -->
+      <!-- You can update the src with actual image URLs -->
+
+      <!-- Row 1 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P001<br>Price: $10</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P002<br>Price: $15</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P003<br>Price: $20</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P004<br>Price: $25</td>
+      </tr>
+      <!-- Row 2 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P005<br>Price: $30</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P006<br>Price: $35</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P007<br>Price: $40</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P008<br>Price: $45</td>
+      </tr>
+      <!-- Row 3 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P009<br>Price: $50</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P010<br>Price: $55</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P011<br>Price: $60</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P012<br>Price: $65</td>
+      </tr>
+      <!-- Row 4 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P013<br>Price: $70</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P014<br>Price: $75</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P015<br>Price: $80</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P016<br>Price: $85</td>
+      </tr>
+      <!-- Row 5 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P017<br>Price: $90</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P018<br>Price: $95</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P019<br>Price: $100</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P020<br>Price: $105</td>
+      </tr>
+      <!-- Row 6 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P021<br>Price: $110</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P022<br>Price: $115</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P023<br>Price: $120</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P024<br>Price: $125</td>
+      </tr>
+      <!-- Row 7 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P025<br>Price: $130</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P026<br>Price: $135</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P027<br>Price: $140</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P028<br>Price: $145</td>
+      </tr>
+      <!-- Row 8 -->
+      <tr>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P029<br>Price: $150</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P030<br>Price: $155</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P031<br>Price: $160</td>
+        <td><img src="https://via.placeholder.com/100"><br>ID: P032<br>Price: $165</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Customer Registration Form</h2>
+
+  <form action="#" method="post">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Telephone Number:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+
+    <div class="form-group">
+      <label>Gender:</label>
+      <label><input type="radio" name="gender" value="male" required> Male</label>
+      <label><input type="radio" name="gender" value="female"> Female</label>
+      <label><input type="radio" name="gender" value="other"> Other</label>
+    </div>
+
+    <div class="form-group">
+      <label for="country">Country of Birth:</label>
+      <select id="country" name="country" required>
+        <option value="">--Select Country--</option>
+        <option value="kenya">Kenya</option>
+        <option value="uganda">Uganda</option>
+        <option value="tanzania">Tanzania</option>
+        <option value="rwanda">Rwanda</option>
+        <option value="burundi">Burundi</option>
+        <option value="south-sudan">South Sudan</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label>Product Category:</label>
+      <label><input type="checkbox" name="category" value="electronics"> Electronics</label>
+      <label><input type="checkbox" name="category" value="fashion"> Fashion</label>
+      <label><input type="checkbox" name="category" value="books"> Books</label>
+      <label><input type="checkbox" name="category" value="furniture"> Furniture</label>
+    </div>
+
+    <div class="form-group">
+      <label for
+
 
     <h2>Available Products</h2>
     <table>
